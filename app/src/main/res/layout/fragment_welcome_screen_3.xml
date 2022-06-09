@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_3"
+    android:padding="@dimen/grid_1"
+    tools:context="com.aiyu.cybersecurity.ui.fragments.welcome_screen.fragments.FragmentWelcomeScreen3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div">
+
+        <ImageView
+            android:id="@+id/image_view_logo_3"
+            android:layout_width="@dimen/image_view_size_screen_1"
+            android:layout_height="@dimen/image_view_size_screen_1"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_screen_3" />
+
+        <TextView
+            android:id="@+id/text_view_vault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view_logo_3"
+            android:layout_centerHorizontal="true"
+            android:text="@string/vault"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            android:textColor="@color/text_color_highlight"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_prevention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_vault"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/vault_des"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_next"
+        app:dividerColor="@color/div_color" />
+
+
+    <ImageButton
+        android:id="@+id/button_next"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_forward"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/button_prev"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back"
+        android:textColor="@color/black" />
+</RelativeLayout>

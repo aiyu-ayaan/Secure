@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeScreenFragment">
+
+    <fragment
+        android:id="@+id/welcomeScreenFragment"
+        android:name="com.aiyu.cybersecurity.ui.fragments.welcome_screen.WelcomeScreenFragment"
+        android:label="WelcomeScreenFragment"
+        tools:layout="@layout/fragment_welcome_screen" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.aiyu.cybersecurity.ui.fragments.home_screen.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+    <action
+        android:id="@+id/action_global_homeFragment"
+        app:destination="@id/homeFragment"
+        app:popUpTo="@id/nav_graph" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.aiyu.cybersecurity.ui.fragments.filter.FilterFragment"
+        android:label="@string/filter"
+        tools:layout="@layout/fragment_filter" />
+    <action
+        android:id="@+id/action_global_welcomeScreenFragment"
+        app:destination="@id/welcomeScreenFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+</navigation>

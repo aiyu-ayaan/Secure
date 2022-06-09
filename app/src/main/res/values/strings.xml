@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Se-Qure</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="authentication">Authentication</string>
+    <string name="prevention">Prevention of unauthorized user access DeepShield for authentication</string>
+    <string name="vault">Vault</string>
+    <string name="vault_des">Integrated Vault for Personal Data</string>
+    <string name="support">Support</string>
+    <string name="support_des">Supports upto 5 multiple devices</string>
+    <string name="filter">Filter</string>
+    <string name="filter_des">Spam Filters</string>
+    <string name="done">Done</string>
+    <string name="pre">Previous</string>
+    <string name="next">Next</string>
+    <string name="home">Home</string>
+    <string name="reset">Reset</string>
+</resources>
